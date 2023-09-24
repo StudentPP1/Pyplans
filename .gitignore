@@ -1,0 +1,10 @@
+/venv/
+/.idea/
+/__pycache__/
+/build/
+/dist/
+*.env
+*.spec
+*.ico
+/back/__pycache__/
+/ui/__pycache__/

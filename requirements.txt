@@ -1,0 +1,16 @@
+altgraph==0.17.3
+dnspython==2.4.2
+importlib-metadata==6.8.0
+packaging==23.1
+pefile==2023.2.7
+pyinstaller==6.0.0
+pyinstaller-hooks-contrib==2023.8
+pymongo==4.4.1
+PyQt5==5.15.9
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.12.2
+PyQt5Designer==5.14.1
+python-dotenv==1.0.0
+pywin32-ctypes==0.2.2
+toml==0.10.2
+zipp==3.17.0
