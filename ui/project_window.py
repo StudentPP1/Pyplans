@@ -29,6 +29,8 @@ class ProjectWindow(QtWidgets.QWidget):
 
         rows, tasks = self.get_project_data()
 
+        self.area = QtWidgets.QScrollArea(self)
+
         self.table = QtWidgets.QTableWidget(rows, 1)
         self.table.itemClicked.connect(self.item_clicked)
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
@@ -62,9 +64,10 @@ class ProjectWindow(QtWidgets.QWidget):
                 }
                 """)
         self.update_table()
-
+        self.area.setWidget(self.table)
+        self.area.setWidgetResizable(True)
         layout = QtWidgets.QVBoxLayout(self.middle_frame)
-        layout.addWidget(self.table)
+        layout.addWidget(self.area)
 
         self.bottom_frame = QtWidgets.QFrame(self.main_frame)
         self.bottom_frame.setStyleSheet("background-color: #18292C")
